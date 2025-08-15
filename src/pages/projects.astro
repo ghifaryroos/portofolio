@@ -3,23 +3,46 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-  <h1>My Projects</h1>
-  <p>Here are some of the things I’ve built:</p>
+	<section class="py-5">
+		<div class="container">
+			<h1 class="mb-4 fw-bold text-center">Projects</h1>
+			<div class="row g-4">
+				<!-- Project Card 1 -->
+				<div class="col-md-4">
+					<div class="card shadow-sm h-100">
+						<img src="/images/project1.jpg" class="card-img-top" alt="Project 1">
+						<div class="card-body">
+							<h5 class="card-title">Sales Dashboard</h5>
+							<p class="card-text">Interactive Tableau dashboard analyzing monthly sales performance and KPIs.</p>
+							<a href="#" class="btn btn-primary btn-sm">View Project</a>
+						</div>
+					</div>
+				</div>
 
-  <div class="card-grid">
-    <div class="card">
-      <h2>Portfolio Website</h2>
-      <p>A personal portfolio built with Astro, hosted on Vercel.</p>
-    </div>
+				<!-- Project Card 2 -->
+				<div class="col-md-4">
+					<div class="card shadow-sm h-100">
+						<img src="/images/project2.jpg" class="card-img-top" alt="Project 2">
+						<div class="card-body">
+							<h5 class="card-title">Customer Segmentation</h5>
+							<p class="card-text">Data analysis using Excel pivot tables to identify customer purchase behavior.</p>
+							<a href="#" class="btn btn-primary btn-sm">View Project</a>
+						</div>
+					</div>
+				</div>
 
-    <div class="card">
-      <h2>Todo App</h2>
-      <p>A simple task manager built with React and Firebase.</p>
-    </div>
-
-    <div class="card">
-      <h2>Weather App</h2>
-      <p>Check live weather updates anywhere in the world.</p>
-    </div>
-  </div>
+				<!-- Project Card 3 -->
+				<div class="col-md-4">
+					<div class="card shadow-sm h-100">
+						<img src="/images/project3.jpg" class="card-img-top" alt="Project 3">
+						<div class="card-body">
+							<h5 class="card-title">Financial Report Automation</h5>
+							<p class="card-text">Automated Excel reporting system reducing monthly reporting time by 40%.</p>
+							<a href="#" class="btn btn-primary btn-sm">View Project</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 </Layout>
